@@ -326,12 +326,12 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 530px) {
   .header__menu {
     line-height: 30px;
   }
   .header__menu li a {
-    font-size: 5px;
+    font-size: 9px;
   }
   .header__text h1 {
     font-size: 25px;
