@@ -107,13 +107,13 @@
 }
 .container__intro {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
 }
 .container__intro-text {
   width: 30%;
   padding-left: 70px;
-  text-align: justify;
 }
 .container__intro-text > div {
   color: #3d4451;
@@ -132,6 +132,7 @@
 .container__info {
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 65%;
   margin-bottom: 10px;
@@ -197,6 +198,9 @@
 }
 .container__project .col {
   width: 20%;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
 }
 .container__project .col img {
   width: 100%;
@@ -212,11 +216,12 @@
 i,
 h3 {
   line-height: 1.5rem;
+  margin-bottom: 15px;
 }
 .container__project .col p {
   padding-top: 10px;
-  height: 90px;
   color: #8a8a8a;
+  bottom: 0;
 }
 
 .container__form {
@@ -273,4 +278,50 @@ textarea {
     line-height: 70px;
     color: white;
     background-color: black;
+}
+
+@media only screen and (max-width: 1280px) {
+    .container__info {
+        width: 90%;
+    }
+    .container__skills {
+        height: auto;;
+    }
+    .container__skills > div {
+        width: 30%;
+    }
+    .container__form {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container__intro {
+        display: block;
+    }
+    .container__intro img {
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .container__intro-text {
+        width: 80%;
+        text-align: center;
+        padding-left: 0;
+        margin: auto;
+    }
+    .container__info-profile table {
+        margin-bottom: 20px;
+    }
+    .container__project {
+        display: block;
+    }
+    .container__project .col {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
